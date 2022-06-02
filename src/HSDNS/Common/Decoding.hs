@@ -50,11 +50,7 @@ questions (QDCount n_questions) = count (fromIntegral n_questions) question
 
 
 question :: Parser Question
-question = do
-    n <- name
-    rec_type <- record_type
-    rec_class <- record_class
-    pure $ Question n rec_type rec_class
+question = Question <$> name <*> record_type <*> record_class
 
 
 name :: Parser Name
