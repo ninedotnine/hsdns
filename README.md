@@ -1,4 +1,8 @@
-# DNS server
+# devious-dns
+
+`devious-dns` is a DNS server which responds to requests with... *inaccurate* IP addresses.
+
+This is likely not useful for anything (except testing?) but it was fun to write.
 
 ## structure
 
@@ -21,6 +25,10 @@ src/
 ├── hsdns-client.hs
 └── hsdns-server.hs
 ```
+
+## dependencies
+
+`attoparsec` and `network`
 
 ## building
 
